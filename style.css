@@ -1,0 +1,133 @@
+
+        * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #ffffff;
+}
+.wrapper {
+  width: min(90%, 800px);
+  position: absolute;
+  transform: translateX(-50%);
+  top: 1em;
+  left: 50%;
+  background-color: #ffffff;
+  padding: 2em 3em;
+  border-radius: 0.5em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  border-radius: 7px;
+  
+}
+.container .image-container,
+.container .preview-container {
+  width: 100%;
+}
+input[type="file"] {
+  display: none;
+}
+.buts{
+    display: grid;
+  grid-template-columns: 1fr 1fr ;
+  gap: 10px;
+}
+label {
+  display: block;
+  position: relative;
+  background-color: #ffffff;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  width: 250px;
+  padding: 16px 0;
+  border-radius: 0.3em;
+  margin: 16px auto;
+  cursor: pointer;
+}
+label {
+            width: 100%;
+            font-size: 1.25em;
+            font-weight: 500;
+            color: #ffffff;
+            cursor: pointer;
+            margin-top: 1em;
+            border: none;
+            background-size: 300% 100%;
+            border-radius: 0.4em;
+            transition: all 0.4s ease-in-out;
+        }
+
+        label:hover {
+            background-position: 100% 0;
+        }
+
+        label:focus {
+            outline: none;
+        }
+
+        label {
+            background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+            box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+        }
+img {
+  display: block;
+  /* Important for cropper js*/
+  max-width: 100%;
+}
+.image-container {
+  width: 60%;
+  margin: 0 auto;
+}
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+input[type="number"] {
+  width: 100px;
+  padding: 16px 5px;
+  border-radius: 0.3em;
+  border: 2px solid #000000;
+}
+button {
+  padding: 1em;
+  color: #000000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  
+}
+button:hover{
+    box-shadow: 0 4px 8px 0 rgb(113, 158, 255), 0 6px 20px 0 rrgb(124, 255, 244)
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 1em;
+}
+.btns button {
+  font-size: 1em;
+}
+.btns a {
+  
+  color: #000000;
+  text-decoration: none;
+  padding: 1em;
+  font-size: 1em;
+  border-radius: 0.3em;
+  background-image: linear-gradient(to right, #25aae1, #40e495);
+  color: white;
+}
+.hide {
+  display: none;
+}
+
